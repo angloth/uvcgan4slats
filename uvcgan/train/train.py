@@ -54,7 +54,8 @@ def train(args_dict):
 
     device   = get_torch_device_smart()
     it_train = construct_data_loaders(
-        args.config.data, args.config.batch_size, split = 'train'
+        1/0#args.config.data, args.config.batch_size, split = 'train'
+        # TODO: Set correct dataloading @benke :)
     )
 
     print("Starting training...")
